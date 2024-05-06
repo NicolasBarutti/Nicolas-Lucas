@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acomodações</title>
     <link rel="stylesheet" href="../css/style.css">
+   
 </head>
 <body>
     <header class="acomodacoes">
@@ -17,10 +18,55 @@
             <a href="">Formulário de contato</a>
         </nav>
     </header>
+ 
 
-    <main class="inicial">
-        <h2>Conheça nossas Acomodações</h2>
-    </main>
+    <div class="carousel-container">
+        <img class="carousel-image" src="https://placehold.jp/300x300.png" alt="Imagem 1">
+        <img class="carousel-image" src="https://placehold.jp/300x300.png" alt="Imagem 2">
+        <img class="carousel-image" src="https://placehold.jp/300x300.png" alt="Imagem 3">
+    </div>
+
+    <script>
+    var currentIndex = 0;
+    var images = document.querySelectorAll('.carousel-image');
+    
+    function showImage(index) {
+        images.forEach(function(image) {
+        image.style.display = 'none';
+        });
+        images[index].style.display = 'block';
+    }
+    
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+    
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    }
+    
+    showImage(currentIndex);
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.carousel-container').addEventListener('click', nextImage);
+    });
+    </script>
+
+
+    <footer>
+        <div class="footerLeft">
+            <h4>Informações</h4>
+            <p>Av. Dr. Francisco Loup, 1111 - Praia de Maresias, São Sebastião - SP, 11628-115</p>
+        </div>
+        <div class="footerCentro">
+            <h4>Midias Sociais</h4>
+            <a href="" target="_blank"><img src="../imagens/transferir.png" alt="Insta"></a>
+            <img src="../imagens/transferir.jpg" alt="youtube">
+            <img src="../imagens/transferir (1).jpg" alt="whats">
+        </div>
+    </footer>
     
 </body>
 </html>

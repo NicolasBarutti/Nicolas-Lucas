@@ -48,6 +48,8 @@ main .about{
     display: flex;
     justify-content:space-around;
     margin-bottom: 5rem;
+   
+    
 }
 
 main .localizacao{
@@ -144,3 +146,12 @@ footer{
     margin: 30px;
     
 }
+
+.carousel-container {
+    text-align: center;
+  }
+  .carousel-image {
+    display: none;
+    max-width: 100%;
+    height: auto;
+  }
