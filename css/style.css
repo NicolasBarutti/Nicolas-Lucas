@@ -183,7 +183,16 @@ footer {
 }
 
 .tit {
-    color: #FFFFFF;
-    margin: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(7, 7, 7);
 
+}
+
+.valor{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(7, 7, 7);
 }
