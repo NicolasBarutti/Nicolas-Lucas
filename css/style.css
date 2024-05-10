@@ -95,6 +95,7 @@ footer{
     color: #FFFFFF;
     margin: 20px;
     font-size: 2vw;
+    display: inline;
     
     
 }
@@ -155,3 +156,17 @@ footer{
     max-width: 100%;
     height: auto;
   }
+
+
+  .Normal{
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 5rem;
+}
+
+.tit{
+    color: #FFFFFF;
+    margin: 20px;
+    
+}
